@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AE989A581E895976A3C966F /* libPods-antrees.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848AF67A56132FF3BEFED0DF /* libPods-antrees.a */; };
+		411C113A208DA6770016833C /* CycriptConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 411C1139208DA6770016833C /* CycriptConfig.plist */; };
+		411C113C208DA6770016833C /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 411C113B208DA6770016833C /* MethodTraceConfig.plist */; };
+		411C1146208DA6780016833C /* libantreesDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 411C1145208DA6780016833C /* libantreesDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		411C114B208DA6780016833C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C114A208DA6780016833C /* JavaScriptCore.framework */; };
+		411C114D208DA6780016833C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C114C208DA6780016833C /* Foundation.framework */; };
+		411C114F208DA6780016833C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411C114E208DA6780016833C /* UIKit.framework */; };
+		411C1154208DA6780016833C /* antreesDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 411C1153208DA6780016833C /* antreesDylib.mm */; };
+		411C1157208DA6780016833C /* CycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C1156208DA6780016833C /* CycriptManager.h */; };
+		411C1159208DA6780016833C /* CycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C1158208DA6780016833C /* CycriptManager.m */; };
+		411C115C208DA6780016833C /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C115B208DA6780016833C /* LLDBTools.h */; };
+		411C115E208DA6780016833C /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 411C115D208DA6780016833C /* LLDBTools.mm */; };
+		411C1161208DA6780016833C /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C1160208DA6780016833C /* ANYMethodLog.h */; };
+		411C1163208DA6780016833C /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C1162208DA6780016833C /* ANYMethodLog.m */; };
+		411C1165208DA6780016833C /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C1164208DA6780016833C /* MethodTrace.h */; };
+		411C1167208DA6780016833C /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C1166208DA6780016833C /* MethodTrace.m */; };
+		411C116C208DA6780016833C /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C116B208DA6780016833C /* AntiAntiDebug.m */; };
+		411C116F208DA6780016833C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 411C116E208DA6780016833C /* fishhook.c */; };
+		411C1171208DA6780016833C /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C1170208DA6780016833C /* fishhook.h */; };
+		411C1173208DA6780016833C /* antreesDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C1172208DA6780016833C /* antreesDylib.h */; };
+		411C1175208DA6780016833C /* antreesDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C1174208DA6780016833C /* antreesDylib.m */; };
+		41D7C0FD208DCD27007B5631 /* IQYUITabbarViewHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7C0FC208DCD27007B5631 /* IQYUITabbarViewHook.m */; };
+		41D7C0FF208DFD4B007B5631 /* IQYVIPUserHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D7C0FE208DFD4B007B5631 /* IQYVIPUserHook.m */; };
+		927B0D27C7733194FC812C73 /* libPods-antreesDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9CEF36FADFC575F9FD6922 /* libPods-antreesDylib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		411C1147208DA6780016833C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 411C1126208DA6770016833C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 411C1144208DA6780016833C;
+			remoteInfo = antreesDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		411C112E208DA6770016833C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				411C1146208DA6780016833C /* libantreesDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00ADC5315386D7287E67BEDB /* Pods-antrees.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antrees.release.xcconfig"; path = "Pods/Target Support Files/Pods-antrees/Pods-antrees.release.xcconfig"; sourceTree = "<group>"; };
+		2A9CEF36FADFC575F9FD6922 /* libPods-antreesDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-antreesDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C1131208DA6770016833C /* antrees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = antrees.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C1134208DA6770016833C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		411C1135208DA6770016833C /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		411C1137208DA6770016833C /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		411C1139208DA6770016833C /* CycriptConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = CycriptConfig.plist; path = Config/CycriptConfig.plist; sourceTree = "<group>"; };
+		411C113B208DA6770016833C /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MethodTraceConfig.plist; path = Config/MethodTraceConfig.plist; sourceTree = "<group>"; };
+		411C113E208DA6770016833C /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		411C113F208DA6770016833C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411C1145208DA6780016833C /* libantreesDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libantreesDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C114A208DA6780016833C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		411C114C208DA6780016833C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		411C114E208DA6780016833C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		411C1152208DA6780016833C /* antreesDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = antreesDylib.xm; path = Logos/antreesDylib.xm; sourceTree = "<group>"; };
+		411C1153208DA6780016833C /* antreesDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = antreesDylib.mm; path = Logos/antreesDylib.mm; sourceTree = "<group>"; };
+		411C1156208DA6780016833C /* CycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CycriptManager.h; path = Cycript/CycriptManager.h; sourceTree = "<group>"; };
+		411C1158208DA6780016833C /* CycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CycriptManager.m; path = Cycript/CycriptManager.m; sourceTree = "<group>"; };
+		411C115B208DA6780016833C /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		411C115D208DA6780016833C /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		411C1160208DA6780016833C /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		411C1162208DA6780016833C /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		411C1164208DA6780016833C /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		411C1166208DA6780016833C /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		411C1169208DA6780016833C /* antreesDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "antreesDylib-Prefix.pch"; sourceTree = "<group>"; };
+		411C116B208DA6780016833C /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		411C116E208DA6780016833C /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		411C1170208DA6780016833C /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		411C1172208DA6780016833C /* antreesDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = antreesDylib.h; sourceTree = "<group>"; };
+		411C1174208DA6780016833C /* antreesDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = antreesDylib.m; sourceTree = "<group>"; };
+		41D7C0FC208DCD27007B5631 /* IQYUITabbarViewHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQYUITabbarViewHook.m; sourceTree = "<group>"; };
+		41D7C0FE208DFD4B007B5631 /* IQYVIPUserHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IQYVIPUserHook.m; sourceTree = "<group>"; };
+		42E2D87C36C504D05862DDDB /* Pods-antrees.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antrees.debug.xcconfig"; path = "Pods/Target Support Files/Pods-antrees/Pods-antrees.debug.xcconfig"; sourceTree = "<group>"; };
+		49DA3699C15AF70E7766E3A5 /* Pods-antreesDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antreesDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-antreesDylib/Pods-antreesDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		848AF67A56132FF3BEFED0DF /* libPods-antrees.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-antrees.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A1AA986CAE12E3D0E28607 /* Pods-antreesDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-antreesDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-antreesDylib/Pods-antreesDylib.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		411C112B208DA6770016833C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE989A581E895976A3C966F /* libPods-antrees.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		411C1142208DA6780016833C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C114B208DA6780016833C /* JavaScriptCore.framework in Frameworks */,
+				411C114F208DA6780016833C /* UIKit.framework in Frameworks */,
+				411C114D208DA6780016833C /* Foundation.framework in Frameworks */,
+				927B0D27C7733194FC812C73 /* libPods-antreesDylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030E0E73F9DFB2B556F3EA08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42E2D87C36C504D05862DDDB /* Pods-antrees.debug.xcconfig */,
+				00ADC5315386D7287E67BEDB /* Pods-antrees.release.xcconfig */,
+				49DA3699C15AF70E7766E3A5 /* Pods-antreesDylib.debug.xcconfig */,
+				F6A1AA986CAE12E3D0E28607 /* Pods-antreesDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		411C1125208DA6770016833C = {
+			isa = PBXGroup;
+			children = (
+				411C1133208DA6770016833C /* antrees */,
+				411C1150208DA6780016833C /* antreesDylib */,
+				411C1149208DA6780016833C /* Frameworks */,
+				411C1132208DA6770016833C /* Products */,
+				030E0E73F9DFB2B556F3EA08 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		411C1132208DA6770016833C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				411C1131208DA6770016833C /* antrees.app */,
+				411C1145208DA6780016833C /* libantreesDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		411C1133208DA6770016833C /* antrees */ = {
+			isa = PBXGroup;
+			children = (
+				411C1134208DA6770016833C /* icon.png */,
+				411C1135208DA6770016833C /* Target.plist */,
+				411C113F208DA6770016833C /* Info.plist */,
+				411C1136208DA6770016833C /* Scripts */,
+				411C1138208DA6770016833C /* Config */,
+				411C113D208DA6770016833C /* TargetApp */,
+			);
+			path = antrees;
+			sourceTree = "<group>";
+		};
+		411C1136208DA6770016833C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				411C1137208DA6770016833C /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		411C1138208DA6770016833C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				411C1139208DA6770016833C /* CycriptConfig.plist */,
+				411C113B208DA6770016833C /* MethodTraceConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		411C113D208DA6770016833C /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				411C113E208DA6770016833C /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		411C1149208DA6780016833C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411C114A208DA6780016833C /* JavaScriptCore.framework */,
+				411C114C208DA6780016833C /* Foundation.framework */,
+				411C114E208DA6780016833C /* UIKit.framework */,
+				848AF67A56132FF3BEFED0DF /* libPods-antrees.a */,
+				2A9CEF36FADFC575F9FD6922 /* libPods-antreesDylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		411C1150208DA6780016833C /* antreesDylib */ = {
+			isa = PBXGroup;
+			children = (
+				411C1172208DA6780016833C /* antreesDylib.h */,
+				411C1174208DA6780016833C /* antreesDylib.m */,
+				41D7C0FB208DCCA9007B5631 /* Hook */,
+				411C1151208DA6780016833C /* Logos */,
+				411C1155208DA6780016833C /* Cycript */,
+				411C115A208DA6780016833C /* Tools */,
+				411C115F208DA6780016833C /* MethodTrace */,
+				411C116A208DA6780016833C /* AntiAntiDebug */,
+				411C116D208DA6780016833C /* fishhook */,
+				411C1168208DA6780016833C /* Supporting Files */,
+			);
+			path = antreesDylib;
+			sourceTree = "<group>";
+		};
+		411C1151208DA6780016833C /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				411C1152208DA6780016833C /* antreesDylib.xm */,
+				411C1153208DA6780016833C /* antreesDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		411C1155208DA6780016833C /* Cycript */ = {
+			isa = PBXGroup;
+			children = (
+				411C1156208DA6780016833C /* CycriptManager.h */,
+				411C1158208DA6780016833C /* CycriptManager.m */,
+			);
+			name = Cycript;
+			sourceTree = "<group>";
+		};
+		411C115A208DA6780016833C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				411C115B208DA6780016833C /* LLDBTools.h */,
+				411C115D208DA6780016833C /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		411C115F208DA6780016833C /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				411C1160208DA6780016833C /* ANYMethodLog.h */,
+				411C1162208DA6780016833C /* ANYMethodLog.m */,
+				411C1164208DA6780016833C /* MethodTrace.h */,
+				411C1166208DA6780016833C /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		411C1168208DA6780016833C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				411C1169208DA6780016833C /* antreesDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		411C116A208DA6780016833C /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				411C116B208DA6780016833C /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		411C116D208DA6780016833C /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				411C116E208DA6780016833C /* fishhook.c */,
+				411C1170208DA6780016833C /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		41D7C0FB208DCCA9007B5631 /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				41D7C0FC208DCD27007B5631 /* IQYUITabbarViewHook.m */,
+				41D7C0FE208DFD4B007B5631 /* IQYVIPUserHook.m */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		411C1143208DA6780016833C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C1161208DA6780016833C /* ANYMethodLog.h in Headers */,
+				411C1171208DA6780016833C /* fishhook.h in Headers */,
+				411C115C208DA6780016833C /* LLDBTools.h in Headers */,
+				411C1157208DA6780016833C /* CycriptManager.h in Headers */,
+				411C1173208DA6780016833C /* antreesDylib.h in Headers */,
+				411C1165208DA6780016833C /* MethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		411C1130208DA6770016833C /* antrees */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411C117B208DA6780016833C /* Build configuration list for PBXNativeTarget "antrees" */;
+			buildPhases = (
+				535C1BEDEB2FE1EF8CBE45F7 /* [CP] Check Pods Manifest.lock */,
+				411C112A208DA6770016833C /* Sources */,
+				411C112B208DA6770016833C /* Frameworks */,
+				411C112C208DA6770016833C /* ShellScript */,
+				411C112D208DA6770016833C /* Resources */,
+				411C112E208DA6770016833C /* CopyFiles */,
+				411C112F208DA6770016833C /* ShellScript */,
+				8B9EA0487D46345F3137896E /* [CP] Embed Pods Frameworks */,
+				1F1C192ABD7A2808777EA988 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				411C1148208DA6780016833C /* PBXTargetDependency */,
+			);
+			name = antrees;
+			productName = antrees;
+			productReference = 411C1131208DA6770016833C /* antrees.app */;
+			productType = "com.apple.product-type.application";
+		};
+		411C1144208DA6780016833C /* antreesDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411C1178208DA6780016833C /* Build configuration list for PBXNativeTarget "antreesDylib" */;
+			buildPhases = (
+				357301D9354EC699B42DD5FD /* [CP] Check Pods Manifest.lock */,
+				411C1140208DA6780016833C /* ShellScript */,
+				411C1141208DA6780016833C /* Sources */,
+				411C1142208DA6780016833C /* Frameworks */,
+				411C1143208DA6780016833C /* Headers */,
+				B1FFFAE79E6B65D844DFDE3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = antreesDylib;
+			productName = antreesDylib;
+			productReference = 411C1145208DA6780016833C /* libantreesDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		411C1126208DA6770016833C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = tilink;
+				TargetAttributes = {
+					411C1130208DA6770016833C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					411C1144208DA6780016833C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 411C1129208DA6770016833C /* Build configuration list for PBXProject "antrees" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 411C1125208DA6770016833C;
+			productRefGroup = 411C1132208DA6770016833C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411C1130208DA6770016833C /* antrees */,
+				411C1144208DA6780016833C /* antreesDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		411C112D208DA6770016833C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C113A208DA6770016833C /* CycriptConfig.plist in Resources */,
+				411C113C208DA6770016833C /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1C192ABD7A2808777EA988 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-antrees/Pods-antrees-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357301D9354EC699B42DD5FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-antreesDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		411C112C208DA6770016833C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		411C112F208DA6770016833C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		411C1140208DA6780016833C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		535C1BEDEB2FE1EF8CBE45F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-antrees-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B9EA0487D46345F3137896E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-antrees/Pods-antrees-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1FFFAE79E6B65D844DFDE3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-antreesDylib/Pods-antreesDylib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		411C112A208DA6770016833C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		411C1141208DA6780016833C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C1163208DA6780016833C /* ANYMethodLog.m in Sources */,
+				411C116F208DA6780016833C /* fishhook.c in Sources */,
+				411C115E208DA6780016833C /* LLDBTools.mm in Sources */,
+				41D7C0FF208DFD4B007B5631 /* IQYVIPUserHook.m in Sources */,
+				411C1159208DA6780016833C /* CycriptManager.m in Sources */,
+				411C116C208DA6780016833C /* AntiAntiDebug.m in Sources */,
+				411C1154208DA6780016833C /* antreesDylib.mm in Sources */,
+				411C1167208DA6780016833C /* MethodTrace.m in Sources */,
+				411C1175208DA6780016833C /* antreesDylib.m in Sources */,
+				41D7C0FD208DCD27007B5631 /* IQYUITabbarViewHook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		411C1148208DA6780016833C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 411C1144208DA6780016833C /* antreesDylib */;
+			targetProxy = 411C1147208DA6780016833C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		411C1176208DA6780016833C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		411C1177208DA6780016833C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		411C1179208DA6780016833C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DA3699C15AF70E7766E3A5 /* Pods-antreesDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YBE5P32EP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antreesDylib/antreesDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libantreesDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"antreesDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		411C117A208DA6780016833C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A1AA986CAE12E3D0E28607 /* Pods-antreesDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 3YBE5P32EP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "antreesDylib/antreesDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libantreesDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"antreesDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		411C117C208DA6780016833C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E2D87C36C504D05862DDDB /* Pods-antrees.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YBE5P32EP;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = antrees/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilink.antrees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		411C117D208DA6780016833C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00ADC5315386D7287E67BEDB /* Pods-antrees.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YBE5P32EP;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = antrees/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tilink.antrees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		411C1129208DA6770016833C /* Build configuration list for PBXProject "antrees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411C1176208DA6780016833C /* Debug */,
+				411C1177208DA6780016833C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411C1178208DA6780016833C /* Build configuration list for PBXNativeTarget "antreesDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411C1179208DA6780016833C /* Debug */,
+				411C117A208DA6780016833C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411C117B208DA6780016833C /* Build configuration list for PBXNativeTarget "antrees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411C117C208DA6780016833C /* Debug */,
+				411C117D208DA6780016833C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 411C1126208DA6770016833C /* Project object */;
+}
